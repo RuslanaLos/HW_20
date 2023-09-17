@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+<form name="registrationForm" id="registrationForm">
+    <p><label><input type="text" name="user_name" placeholder="Name"></label></p>
+    <p><label><input type="text" name="user_surname" placeholder="Surname"></label></p>
+
+    <p><label><input type="date" name="date_of_birth" placeholder="Date of birth"></label></p>
+
+    <p><label><input type="radio" name="gender" value="Male"> Male </label></p>
+    <p><label><input type="radio" name="gender" value="Female"> Female </label></p>
+
+    <label><select name="city">
+        <option value="0">Select your city</option>
+        <option value="kv">Kyiv</option>
+        <option value="dn">Dnipro</option>
+        <option value="lv">Lviv</option>
+        <option value="od">Odesa</option>
+    </select></label>
+
+    <div><label><textarea name="address" placeholder="Write your address"></textarea></label></div>
+    <div>
+    <p><label><input type="checkbox" name="languages" value="ua"> Ukrainian </label></p>
+    <p><label><input type="checkbox" name="languages" value="en"> English </label></p>
+    <p><label><input type="checkbox" name="languages" value="pl"> Polish </label></p>
+    <p><label><input type="checkbox" name="languages" value="tr"> Turkish </label></p>
+    </div>
+
+    <label><select name="skill" id="skill" multiple>
+        <option value="1">Select your skills</option>
+        <option value="jv">Java</option>
+        <option value="js">JavaScript</option>
+        <option value="cpp">C++</option>
+        <option value="pthn">Python</option>
+    </select></label>
+    <button type="button" id="btn">Save your data</button>
+
+</form>
+
+
+
+<script src="js/data.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
